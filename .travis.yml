@@ -1,11 +1,9 @@
 language: ruby
+rvm: 1.9.3
+gemfile: Gemfile
 
 script: bundle exec rake travis
 
-matrix:
-  include:
-    - rvm: 1.9.3
-      gemfile: Gemfile
 notifications:
   email: manisha@shippable.com
  
